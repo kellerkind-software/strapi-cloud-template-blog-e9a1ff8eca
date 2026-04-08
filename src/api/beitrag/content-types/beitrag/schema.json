@@ -37,19 +37,10 @@
       ]
     },
     "kategorie": {
-      "type": "enumeration",
-      "enum": [
-        "News",
-        "Tipps & Tricks",
-        "Montage",
-        "Produkte"
-      ],
-      "default": "News",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategorie.kategorie",
+      "inversedBy": "beitraege"
     },
     "kurztext": {
       "type": "text",

@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kategorien",
+  "info": {
+    "singularName": "kategorie",
+    "pluralName": "kategorien",
+    "displayName": "Kategorie",
+    "description": "Kategorien für Produkte, Blog und FAQ"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "typ": {
+      "type": "enumeration",
+      "enum": [
+        "produkt",
+        "blog",
+        "faq"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "reihenfolge": {
+      "type": "integer",
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "produkte": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produkt.produkt",
+      "mappedBy": "kategorie"
+    },
+    "beitraege": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::beitrag.beitrag",
+      "mappedBy": "kategorie"
+    },
+    "faqs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq",
+      "mappedBy": "kategorie"
+    }
+  }
+}

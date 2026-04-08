@@ -43,19 +43,10 @@
       ]
     },
     "kategorie": {
-      "type": "enumeration",
-      "enum": [
-        "Dachbox",
-        "Dachträger",
-        "Zubehör",
-        "Ersatzteile"
-      ],
-      "default": "Dachbox",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategorie.kategorie",
+      "inversedBy": "produkte"
     },
     "verfuegbar": {
       "type": "boolean",

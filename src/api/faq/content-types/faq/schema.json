@@ -30,20 +30,10 @@
       }
     },
     "kategorie": {
-      "type": "enumeration",
-      "enum": [
-        "Allgemein",
-        "Buchung",
-        "Montage",
-        "Produkte",
-        "Versand & Rückgabe"
-      ],
-      "default": "Allgemein",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategorie.kategorie",
+      "inversedBy": "faqs"
     },
     "reihenfolge": {
       "type": "integer",
