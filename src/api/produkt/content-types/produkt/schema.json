@@ -91,6 +91,14 @@
           "localized": true
         }
       }
+    },
+    "verwendungszwecke": {
+      "type": "json",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   },
   "pluginOptions": {
