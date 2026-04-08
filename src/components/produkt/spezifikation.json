@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_produkt_spezifikationen",
+  "info": {
+    "displayName": "Spezifikation",
+    "description": "Technische Spezifikation eines Produkts"
+  },
+  "options": {},
+  "attributes": {
+    "bezeichnung": {
+      "type": "string",
+      "required": true
+    },
+    "wert": {
+      "type": "string",
+      "required": true
+    },
+    "einheit": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "masse",
+        "hoehe",
+        "breite",
+        "laenge",
+        "volumen",
+        "gewicht",
+        "traglast",
+        "material",
+        "farbe",
+        "schloss",
+        "kompatibilitaet",
+        "garantie",
+        "sonstiges"
+      ],
+      "default": "sonstiges"
+    }
+  }
+}

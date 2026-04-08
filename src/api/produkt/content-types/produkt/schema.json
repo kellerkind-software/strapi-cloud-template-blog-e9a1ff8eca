@@ -81,6 +81,16 @@
           "localized": true
         }
       }
+    },
+    "spezifikationen": {
+      "type": "component",
+      "repeatable": true,
+      "component": "produkt.spezifikation",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   },
   "pluginOptions": {
