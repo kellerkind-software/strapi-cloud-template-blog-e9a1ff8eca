@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "datenschutz",
+  "info": {
+    "singularName": "datenschutz",
+    "pluralName": "datenschutze",
+    "displayName": "Datenschutz",
+    "description": "Datenschutzerklärung"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "inhalt": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

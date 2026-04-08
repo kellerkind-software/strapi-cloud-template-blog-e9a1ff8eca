@@ -18,9 +18,6 @@
     "beschreibung": {
       "type": "richtext"
     },
-    "preis": {
-      "type": "decimal"
-    },
     "bild": {
       "type": "media",
       "multiple": false,
@@ -45,6 +42,10 @@
     },
     "highlights": {
       "type": "text"
+    },
+    "rentware_snippet": {
+      "type": "text",
+      "required": false
     }
   }
 }

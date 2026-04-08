@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "startseite",
+  "info": {
+    "singularName": "startseite",
+    "pluralName": "startseiten",
+    "displayName": "Startseite",
+    "description": "Inhalte der Startseite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero_titel": {
+      "type": "string"
+    },
+    "hero_untertitel": {
+      "type": "text"
+    },
+    "hero_bild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "intro_text": {
+      "type": "richtext"
+    },
+    "seo_titel": {
+      "type": "string"
+    },
+    "seo_beschreibung": {
+      "type": "text"
+    }
+  }
+}

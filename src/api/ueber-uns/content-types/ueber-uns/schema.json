@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "ueber_uns",
+  "info": {
+    "singularName": "ueber-uns",
+    "pluralName": "ueber-uns-seiten",
+    "displayName": "Über uns",
+    "description": "Über uns Seite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "inhalt": {
+      "type": "richtext"
+    },
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ",
+    "description": "Häufig gestellte Fragen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "frage": {
+      "type": "string",
+      "required": true
+    },
+    "antwort": {
+      "type": "richtext",
+      "required": true
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": ["Allgemein", "Buchung", "Montage", "Produkte", "Versand & Rückgabe"],
+      "default": "Allgemein"
+    },
+    "reihenfolge": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
