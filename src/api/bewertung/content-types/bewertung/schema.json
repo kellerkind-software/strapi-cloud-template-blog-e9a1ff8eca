@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bewertungen",
+  "info": {
+    "singularName": "bewertung",
+    "pluralName": "bewertungen",
+    "displayName": "Bewertung",
+    "description": "Kundenbewertungen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sterne": {
+      "type": "integer",
+      "min": 1,
+      "max": 5,
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "produkt": {
+      "type": "string"
+    },
+    "verifiziert": {
+      "type": "boolean",
+      "default": false
+    },
+    "datum": {
+      "type": "date"
+    }
+  }
+}

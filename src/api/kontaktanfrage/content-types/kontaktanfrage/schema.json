@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kontaktanfragen",
+  "info": {
+    "singularName": "kontaktanfrage",
+    "pluralName": "kontaktanfragen",
+    "displayName": "Kontaktanfrage",
+    "description": "Eingehende Kontaktformular-Nachrichten"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "vorname": {
+      "type": "string",
+      "required": true
+    },
+    "nachname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telefon": {
+      "type": "string"
+    },
+    "betreff": {
+      "type": "enumeration",
+      "enum": ["Allgemeine Anfrage", "Produktberatung", "Montage", "Garantie", "Sonstiges"],
+      "default": "Allgemeine Anfrage"
+    },
+    "nachricht": {
+      "type": "text",
+      "required": true
+    },
+    "gelesen": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

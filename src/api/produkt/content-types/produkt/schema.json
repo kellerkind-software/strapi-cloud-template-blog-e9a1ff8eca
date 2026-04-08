@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produkte",
+  "info": {
+    "singularName": "produkt",
+    "pluralName": "produkte",
+    "displayName": "Produkt",
+    "description": "Dachboxen und Zubehör"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "beschreibung": {
+      "type": "richtext"
+    },
+    "preis": {
+      "type": "decimal"
+    },
+    "bild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "galerie": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": ["Dachbox", "Dachträger", "Zubehör", "Ersatzteile"],
+      "default": "Dachbox"
+    },
+    "verfuegbar": {
+      "type": "boolean",
+      "default": true
+    },
+    "artikelnummer": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "text"
+    }
+  }
+}

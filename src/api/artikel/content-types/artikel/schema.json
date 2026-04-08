@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikel",
+  "info": {
+    "singularName": "artikel",
+    "pluralName": "artikel",
+    "displayName": "Artikel",
+    "description": "Blog- und News-Beiträge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titel": {
+      "type": "string",
+      "required": true
+    },
+    "inhalt": {
+      "type": "richtext",
+      "required": true
+    },
+    "titelbild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "kategorie": {
+      "type": "enumeration",
+      "enum": ["News", "Tipps & Tricks", "Montage", "Produkte"],
+      "default": "News"
+    },
+    "kurztext": {
+      "type": "text"
+    },
+    "autor": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titel"
+    }
+  }
+}
