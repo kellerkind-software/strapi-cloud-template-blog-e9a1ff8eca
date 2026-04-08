@@ -1,3 +1,3 @@
 'use strict';
 const { createCoreService } = require('@strapi/strapi').factories;
-module.exports = createCoreService('api::artikel.artikel');
+module.exports = createCoreService('api::beitrag.beitrag');

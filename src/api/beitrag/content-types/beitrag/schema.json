@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "artikel",
+  "collectionName": "beitraege",
   "info": {
-    "singularName": "artikel",
-    "pluralName": "artikel",
-    "displayName": "Artikel",
+    "singularName": "beitrag",
+    "pluralName": "beitraege",
+    "displayName": "Blog / News",
     "description": "Blog- und News-Beiträge"
   },
   "options": {

@@ -1,3 +1,3 @@
 'use strict';
 const { createCoreRouter } = require('@strapi/strapi').factories;
-module.exports = createCoreRouter('api::artikel.artikel');
+module.exports = createCoreRouter('api::beitrag.beitrag');
