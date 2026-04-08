@@ -13,31 +13,73 @@
   "attributes": {
     "titel": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "inhalt": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "titelbild": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "kategorie": {
       "type": "enumeration",
-      "enum": ["News", "Tipps & Tricks", "Montage", "Produkte"],
-      "default": "News"
+      "enum": [
+        "News",
+        "Tipps & Tricks",
+        "Montage",
+        "Produkte"
+      ],
+      "default": "News",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "kurztext": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "autor": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "uid",
-      "targetField": "titel"
+      "targetField": "titel",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
   }
 }

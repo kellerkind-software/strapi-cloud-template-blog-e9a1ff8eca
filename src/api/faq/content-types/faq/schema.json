@@ -13,20 +13,51 @@
   "attributes": {
     "frage": {
       "type": "string",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "antwort": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "kategorie": {
       "type": "enumeration",
-      "enum": ["Allgemein", "Buchung", "Montage", "Produkte", "Versand & Rückgabe"],
-      "default": "Allgemein"
+      "enum": [
+        "Allgemein",
+        "Buchung",
+        "Montage",
+        "Produkte",
+        "Versand & Rückgabe"
+      ],
+      "default": "Allgemein",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "reihenfolge": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
   }
 }
